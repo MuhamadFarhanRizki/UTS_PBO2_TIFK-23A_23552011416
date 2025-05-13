@@ -1,12 +1,15 @@
 UTS Pemrograman Berorientasi Obyek 2
 
 Mata Kuliah: Pemrograman Berorientasi Obyek 2
+
 Dosen Pengampu: Muhammad Ikhwan Fathulloh
 
 1. Profil
    
 Nama: Muhamad Farhan Rizki
+
 NIM: 23552011416
+
 Studi Kasus: Pengembangan Aplikasi Todo List Web untuk Mahasiswa dan Dosen Universitas Teknologi Bandung (UTB)
 
 2.Judul Studi Kasus
@@ -52,6 +55,7 @@ Penjelasan: Enkapsulasi menyembunyikan data dalam class dan hanya memperbolehkan
 Contoh Implementasi:
 
 •	Pada class User dan ToDo, semua properti dibuat private dan diakses melalui method getter dan setter.
+
 @Entity
 public class User {
     private Long id;
@@ -69,6 +73,7 @@ Penjelasan: Polimorfisme memungkinkan objek untuk berperilaku berbeda tergantung
 Contoh Implementasi:
 
 •	Method loadUserByUsername() diimplementasikan berbeda oleh UserDetailsServiceImpl dan UserDetailsService.
+
 @Override
 public UserDetails loadUserByUsername(String username) {
     ...
