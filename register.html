@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Garden of Time(ToDo-List)</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #c8e6c9, #b2ebf2); /* gradasi hijau ke biru */
+            padding: 30px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #ffffffcc;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #388e3c;
+        }
+
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            width: 70%;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #81c784;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #66bb6a;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #388e3c;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Daftar Akun 🌸</h2>
+        <form th:action="@{/register}" method="post" th:object="${user}">
+            <input type="text" th:field="*{username}" placeholder="Username 🌿" required/><br>
+            <input type="password" th:field="*{password}" placeholder="Password 🌻" required/><br>
+            <button type="submit">Daftar 🌼</button>
+        </form>
+        <a href="/login">Sudah punya akun? Login 🌱</a>
+    </div>
+</body>
+</html>
