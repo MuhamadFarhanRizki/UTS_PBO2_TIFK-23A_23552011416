@@ -94,4 +94,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
 GitHub: https://github.com/MuhamadFarhanRizki/UTS_PBO2_TIFK-23A_23552011416.git
 
-YouTube: [Link Demo YouTube]
+YouTube/Drive: https://drive.google.com/drive/folders/132aWRGcSDKvkYP1GeoEDj0XSgh2jrXp4
